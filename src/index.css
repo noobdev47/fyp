@@ -1,5 +1,8 @@
+.app{
+  display: flex;
+}
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +13,34 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar{
+  background-color: #0099ff !important;
+  height: 55px;
+}
+
+.main{
+  padding-top: 70px;
+}
+
+.header{
+  padding-top: 10px;
+}
+
+.docname{
+  padding-top: 7px;
+  margin-left: 20px;
+}
+
+.icon{
+  padding-top: 6px;
+}
+
+#rate{
+  margin-left: 20px;
+}
+
+#bookBtn{
+  margin-top: 30px;
 }
