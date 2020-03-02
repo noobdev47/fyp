@@ -6,14 +6,21 @@ import PatientDash from './dashboards/PatientDash';
 import { Container } from 'semantic-ui-react';
 import DocProfile from './profiles/DocProfile';
 
-class App extends Component {
+const rightItems = [
+  { as: "a", content: "Find Doctors", key: "doctor" },
+  { as: "a", content: "Find Hospitals", key: "hospital" },
+  { as: "a", content: "Login", key: "login" },
+  { as: "a", content: "Signup", key: "signup" }
+];
+
+class App extends Component {  
   render() {
     return (
       <Fragment>
-        <NavBar />
-        <Container className='main'>
+        <NavBar rightItems={rightItems}/>
+        {/* <Container className='main'>
           <DocProfile />
-        </Container>
+        </Container> */}
       </Fragment>
     );
   }
